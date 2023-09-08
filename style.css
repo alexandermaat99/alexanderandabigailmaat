@@ -18,7 +18,7 @@ h1{
 }
 
 #headderSection{
-    min-height: 90vh;
+    min-height: 80vh;
 }
 #photosSection{
     min-height: 100vh;
@@ -40,7 +40,6 @@ section{
     display: flex;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
     color: white;
 }
 
@@ -67,6 +66,13 @@ section{
     scroll-snap-align: center;
 }
 
+@media screen and (max-width: 600px) {
+
+    .photos img{
+        max-width: 90vw;
+    }
+    
+}
 .photos img{
     max-width: 500px;
     padding: 10px;
