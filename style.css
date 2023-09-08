@@ -42,9 +42,6 @@ section{
     align-content: center;
     min-height: 100vh;
     color: white;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    
 }
 
 .hidden {
@@ -62,24 +59,32 @@ section{
 
 .photos {
     display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.photos div{
+    scroll-snap-align: center;
 }
 
 .photos img{
     max-width: 500px;
     padding: 10px;
-
 }
 
-/* 
-.photos:nth-child(2){
+/* .photos:nth-child(2){
     transition-delay: 200ms;
 
 }
 .photos:nth-child(3){
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 
 }
 .photos:nth-child(4){
-    transition-delay: 600ms;
+    transition-delay: 400ms;
+
+}
+.photos:nth-child(5){
+    transition-delay: 500ms;
 
 } */
