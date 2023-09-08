@@ -12,13 +12,13 @@ h1{
     font-size: 5vh;
     font-family: 'EB Garamond', serif;
     font-weight: lighter;
-    padding-bottom: 0vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
     
 }
 
 #headderSection{
-    min-height: 92vh;
+    min-height: 90vh;
 }
 #photosSection{
     min-height: 100vh;
@@ -44,6 +44,7 @@ section{
     color: white;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    
 }
 
 .hidden {
@@ -64,7 +65,7 @@ section{
 }
 
 .photos img{
-    width: 90vw;
+    max-width: 500px;
     padding: 10px;
 
 }
