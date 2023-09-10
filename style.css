@@ -127,3 +127,10 @@ section{
 .photos div {
     scroll-snap-align: center;
 }
+
+.sign{
+    font-family: 'Courier New', Courier, monospace;
+}
+.sign2{
+    font-family: 'Caveat', cursive;
+}
