@@ -91,44 +91,39 @@ section{
     scroll-snap-type: x mandatory;
 }
 
-.photos div{
-    scroll-snap-align: center;
-}
-
-@media (max-width: 1000px) {
-    .photos img {
-        width: 90vw;
-        padding: 5px; /* Adjust padding for smaller screens if needed */
-    }
-    #linkPic{
-        width: 60vw;
-        padding: 5px;
-        
-    }
-   
-}
-
-
-.photos img{
+.photos img {
     max-width: 500px;
     padding: 10px;
 }
 
-
-
-#linkPic{
+.linkPic {
     max-width: 300px;
     border-radius: 50px;
     border: rgba(255, 255, 255, 0) solid 10px;
 }
 
-#linkPic:hover{
-    border: #fffffe solid 10px;
+/* Apply hover effect only on desktop screens */
+@media (min-width: 1001px) {
+    .linkPic:hover {
+        border: #fffffe solid 10px;
+    }
 }
 
-.sign{
-    font-family: 'Courier New', Courier, monospace;
+/* Styles for mobile screens */
+@media (max-width: 1000px) {
+    .photos img {
+        width: 90vw;
+        padding: 5px; /* Adjust padding for smaller screens if needed */
+    }
+    .linkPic {
+        width: 60vw;
+        padding: 0px;
+        margin: 0;
+        /* Reset border for mobile screens */
+        border: rgba(255, 255, 255, 0) solid 10px;
+    }
 }
-.sign2{
-    font-family: 'Caveat', cursive;
+
+.photos div {
+    scroll-snap-align: center;
 }
