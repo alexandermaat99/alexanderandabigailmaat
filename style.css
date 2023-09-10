@@ -2,9 +2,15 @@ body{
     background-color: #004643;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color: #fffffe;
+    font-family: 'EB Garamond', serif;
+}
 
 p{
     color: #abd1c6;
+    font-family: 'EB Garamond', serif;
 }
 
 h1{
@@ -26,6 +32,9 @@ h1{
 
 #writingSection{
     min-height: 90vh;
+}
+#linksSection{
+    min-height: 20vh;
 }
 
 section{
@@ -66,31 +75,14 @@ section{
     scroll-snap-align: center;
 }
 
-@media screen and (max-width: 600px) {
-
-    .photos img{
-        max-width: 90vw;
+@media (max-width: 768px) {
+    .photos img {
+        width: 90vw;
+        padding: 5px; /* Adjust padding for smaller screens if needed */
     }
-    
 }
+
 .photos img{
     max-width: 500px;
     padding: 10px;
 }
-
-/* .photos:nth-child(2){
-    transition-delay: 200ms;
-
-}
-.photos:nth-child(3){
-    transition-delay: 300ms;
-
-}
-.photos:nth-child(4){
-    transition-delay: 400ms;
-
-}
-.photos:nth-child(5){
-    transition-delay: 500ms;
-
-} */
