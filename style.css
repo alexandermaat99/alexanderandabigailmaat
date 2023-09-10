@@ -11,6 +11,9 @@ a{
 p{
     color: #abd1c6;
     font-family: 'EB Garamond', serif;
+    padding: 0px;
+    margin: 0px;
+    max-width: 500px;
 }
 
 h1{
@@ -23,18 +26,34 @@ h1{
     
 }
 
+
 #headderSection{
     min-height: 80vh;
 }
 #photosSection{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 #writingSection{
-    min-height: 90vh;
+    min-height: 60vh;
+    text-align: left;
+    text-indent: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 #linksSection{
-    min-height: 20vh;
+    min-height: 50vh;
+}
+
+#footerSection{
+    min-height: 5vh;
+    background-color: #abd1c6;
+    margin-top: 10vh;
+}
+
+#mailSection{
+    min-height: 50vh;
 }
 
 section{
@@ -43,6 +62,7 @@ section{
     align-content: center;
     /* min-height: 75vh; */
     color: white;
+    text-align: center;
 }
 
 .sectionScroll{
@@ -80,9 +100,35 @@ section{
         width: 90vw;
         padding: 5px; /* Adjust padding for smaller screens if needed */
     }
+    #linkPic{
+        width: 60vw;
+        padding: 0px;
+        margin: 0;
+    }
+   
 }
+
 
 .photos img{
     max-width: 500px;
     padding: 10px;
+}
+
+
+
+#linkPic{
+    max-width: 300px;
+    border-radius: 50px;
+    border: rgba(255, 255, 255, 0) solid 10px;
+}
+
+#linkPic:hover{
+    border: #fffffe solid 10px;
+}
+
+.sign{
+    font-family: 'Courier New', Courier, monospace;
+}
+.sign2{
+    font-family: 'Caveat', cursive;
 }
