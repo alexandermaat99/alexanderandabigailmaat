@@ -95,7 +95,7 @@ section{
     scroll-snap-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .photos img {
         width: 90vw;
         padding: 5px; /* Adjust padding for smaller screens if needed */
